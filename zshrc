@@ -1,3 +1,5 @@
+# Install zinit(https://github.com/zdharma/zinit) first!
+
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent identities arch-jannik
 zstyle :omz:plugins:ssh-agent lifetime 4h
