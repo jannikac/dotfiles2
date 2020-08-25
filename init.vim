@@ -29,7 +29,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab autoindent
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 set incsearch ignorecase smartcase hlsearch
 set number
-
+set clipboard+=unnamedplus
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline_section_warning = ''
