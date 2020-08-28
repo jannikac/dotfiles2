@@ -35,14 +35,20 @@ autoload -Uz _zinit
 alias ls='ls --color=always'
 alias vim='nvim'
 
+# Add local pip path to PATH
+python3 -m site &> /dev/null && PATH="$PATH:`python3 -m site --user-base`/bin"
+
+# Load completion engine
 autoload -Uz compinit
 compinit
 
+# Create history file
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
+# Bind CTRL+{leftarrow, rightarrow, backspace}
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey "^[[3~" delete-char
